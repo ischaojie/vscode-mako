@@ -1,0 +1,77 @@
+{
+  "Comment": {
+    "prefix": "comment",
+    "description": "Comment block",
+    "body": ["## $1"]
+  },
+  "var": {
+    "prefix": "var",
+    "description": "Empty Var",
+    "body": ["${ $1 }"]
+  },
+  "tag": {
+    "prefix": "tag",
+    "description": "Empty tag",
+    "body": ["${ $1 }"]
+  },
+  "Inherit": {
+    "prefix": "inherit",
+    "description": "Inherit template",
+    "body": ["<%inherit file=\"$1\"/>"]
+  },
+  "Namespace": {
+    "prefix": "namespace",
+    "description": "Import from another templates",
+    "body": ["<%namespace name=\"$1\" file=\"$2\"/>"]
+  },
+  "For loop": {
+    "prefix": "for",
+    "description": "For loop",
+    "body": ["% for $1 in $2:", "$3", "% endfor"]
+  },
+  "For-Else loop": {
+    "prefix": "forelse",
+    "description": "For-Else loop",
+    "body": ["% for $1 in $2:", "$3", "% else:", "$4", "% endfor"]
+  },
+  "If condition": {
+    "prefix": "if",
+    "description": "IF condition",
+    "body": ["% if $1:", "$2", "% else:", "% endif"]
+  },
+  "Include": {
+    "prefix": "include",
+    "description": "Include other templates",
+    "body": ["<%include file=\"$1\"/>"]
+  },
+  "Super": {
+    "prefix": "super",
+    "description": "Super block",
+    "body": ["{{ super() }}"]
+  },
+  "Module-level Block": {
+    "prefix": "block-module",
+    "description": "Creates a block with python",
+    "body": ["<%!", "$1", "%>"]
+  },
+  "Python Block": {
+    "prefix": "block-py",
+    "description": "Creates a block with python",
+    "body": ["<%", "$1", "%>"]
+  },
+  "Template Block": {
+    "prefix": "block",
+    "description": "Creates a block",
+    "body": ["<%block name=\"$1\">", "$2", "</%block>"]
+  },
+  "Def": {
+    "prefix": "def",
+    "description": "Def a function",
+    "body": ["<%def name=\"$1\">", "$2", "</%def>"]
+  },
+  "Static": {
+    "prefix": "static",
+    "description": "Static file",
+    "body": ["${static('$1')}"]
+  }
+}

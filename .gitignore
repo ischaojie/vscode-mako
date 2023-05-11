@@ -1,0 +1,6 @@
+node_modules
+*.vsix
+vsc-extension-quickstart.md
+/.idea/
+/env/
+/env*/

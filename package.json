@@ -1,0 +1,82 @@
+{
+  "name": "better-mako",
+  "displayName": "Better Mako",
+  "description": "Better Mako template language support",
+  "version": "0.1.0",
+  "publisher": "chaojie",
+  "author": "Chaojie",
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "mako",
+    "template"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ischaojie/vscode-mako.git"
+  },
+  "main": "./src/extension.js",
+  "scripts": {
+    "format": "prettier --write '**/*.{js,json,md}'",
+    "lint": "prettier --check '**/*.{js,json,md}'"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "printWidth": 119,
+    "bracketSpacing": false,
+    "arrowParens": "avoid"
+  },
+  "devDependencies": {
+    "prettier": "2.7.1"
+  },
+  "activationEvents": [
+    "onLanguage:mako"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "mako",
+        "aliases": [
+          "HTML (Mako)",
+          "mako"
+        ],
+        "extensions": [
+          ".mako"
+        ],
+        "icon": {
+          "light": "./icon.png",
+          "dark": "./icon.png"
+        },
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mako",
+        "scopeName": "text.html.mako",
+        "path": "./syntaxes/mako.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "mako",
+        "scopeName": "text.html.mako",
+        "path": "./snippets/mako-snippets.json"
+      }
+    ],
+    "breakpoints": [
+      {
+        "language": "mako"
+      }
+    ]
+  }
+}
