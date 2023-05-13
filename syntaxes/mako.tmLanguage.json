@@ -1,8 +1,5 @@
 {
-  "fileTypes": [
-    "mako",
-    "html"
-  ],
+  "fileTypes": ["mako", "html"],
   "name": "Mako",
   "scopeName": "text.html.mako",
   "foldingStartMarker": "(<(?i:(head|table|div|style|script|ul|ol|form|dl))\\b.*?>|\\{)",
