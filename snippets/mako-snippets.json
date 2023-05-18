@@ -37,6 +37,11 @@
   "If condition": {
     "prefix": "if",
     "description": "IF condition",
+    "body": ["% if $1:", "% endif"]
+  },
+  "If-Else condition": {
+    "prefix": "ifelse",
+    "description": "IF-Else condition",
     "body": ["% if $1:", "$2", "% else:", "% endif"]
   },
   "Include": {
