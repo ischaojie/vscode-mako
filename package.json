@@ -38,9 +38,6 @@
   "devDependencies": {
     "prettier": "2.7.1"
   },
-  "activationEvents": [
-    "onLanguage:mako"
-  ],
   "contributes": {
     "languages": [
       {
@@ -76,6 +73,12 @@
     "breakpoints": [
       {
         "language": "mako"
+      }
+    ],
+    "htmlLanguageParticipants": [
+      {
+        "languageId": "mako",
+        "autoInsert": true
       }
     ]
   }
