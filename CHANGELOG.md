@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.1] - 2023-05-18
+
+### Features
+
+- Support vscode html features using `htmlLanguageParticipants`
+- Support if-condition snippets
+
 ## [0.1.0] - 2023-05-13
 
 ### Features

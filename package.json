@@ -2,7 +2,7 @@
   "name": "better-mako",
   "displayName": "Better Mako",
   "description": "Better Mako template language support",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "chaojie",
   "author": "Chaojie",
   "engines": {
