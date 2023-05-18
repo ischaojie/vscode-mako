@@ -38,6 +38,9 @@
   "devDependencies": {
     "prettier": "2.7.1"
   },
+  "activationEvents": [
+    "onLanguage:mako"
+  ],
   "contributes": {
     "languages": [
       {
