@@ -46,7 +46,7 @@
       {
         "id": "mako",
         "aliases": [
-          "HTML (Mako)",
+          "Mako template",
           "mako"
         ],
         "extensions": [
@@ -62,14 +62,14 @@
     "grammars": [
       {
         "language": "mako",
-        "scopeName": "text.html.mako",
+        "scopeName": "source.mako",
         "path": "./syntaxes/mako.tmLanguage.json"
       }
     ],
     "snippets": [
       {
         "language": "mako",
-        "scopeName": "text.html.mako",
+        "scopeName": "source.mako",
         "path": "./snippets/mako-snippets.json"
       }
     ],

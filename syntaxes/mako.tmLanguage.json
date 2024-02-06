@@ -1,7 +1,7 @@
 {
-  "fileTypes": ["mako", "html"],
-  "name": "Mako",
-  "scopeName": "text.html.mako",
+  "fileTypes": [ "mako" ],
+  "name": "Mako template",
+  "scopeName": "source.mako",
   "foldingStartMarker": "(<(?i:(head|table|div|style|script|ul|ol|form|dl))\\b.*?>|\\{)",
   "foldingStopMarker": "(</(?i:(head|table|div|style|script|ul|ol|form|dl))>|\\})",
   "patterns": [
@@ -51,8 +51,7 @@
         }
       },
       "end": "(</%(\\2)>)",
-      "name": "source.mako.text",
-      "patterns": []
+      "name": "source.mako.text"
     },
     {
       "begin": "(<%(doc)>)",
@@ -65,8 +64,7 @@
         }
       },
       "end": "(</%(\\2)>)",
-      "name": "comment.block.mako",
-      "patterns": []
+      "name": "comment.block.mako"
     },
     {
       "begin": "(\\${)",
@@ -370,9 +368,6 @@
           "include": "#tag-stuff"
         }
       ]
-    },
-    {
-      "include": "text.html.basic"
     }
   ],
   "repository": {
@@ -732,7 +727,7 @@
         }
       ]
     },
-    "embedded-code": {}
+    "embedded-code": { }
   },
   "uuid": "8580C15A-0134-4D25-9705-14F98729B2C5"
 }
