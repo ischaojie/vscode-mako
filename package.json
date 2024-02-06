@@ -71,6 +71,21 @@
           "dark": "./icon.png"
         },
         "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "mako-python",
+        "aliases": [
+          "Mako template (Python)"
+        ],
+        "extensions": [
+          ".py.mako",
+          ".pyi.mako"
+        ],
+        "icon": {
+          "light": "./icon.png",
+          "dark": "./icon.png"
+        },
+        "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
@@ -82,7 +97,15 @@
       {
         "language": "mako-html",
         "scopeName": "source.mako.templates.html",
-        "path": "./syntaxes/mako-html.tmLanguage.json"
+        "path": "./syntaxes/mako-html.tmLanguage.json",
+        "embeddedLanguages": {
+          "source.mako": "text.html.basic"
+        }
+      },
+      {
+        "language": "mako-python",
+        "scopeName": "source.mako.templates.python",
+        "path": "./syntaxes/mako-python.tmLanguage.json"
       }
     ],
     "snippets": [
@@ -94,6 +117,11 @@
       {
         "language": "mako-html",
         "scopeName": "source.mako.templates.html",
+        "path": "./snippets/mako-snippets.json"
+      },
+      {
+        "language": "mako-python",
+        "scopeName": "source.mako.templates.python",
         "path": "./snippets/mako-snippets.json"
       }
     ],
