@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/tmlanguage.json",
+  "name": "Mako template (Python)",
+  "scopeName": "source.mako.templates.python",
+  "patterns": [
+    {
+      "include": "source.mako"
+    },
+    {
+      "include": "source.python"
+    }
+  ]
+}

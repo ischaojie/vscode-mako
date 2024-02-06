@@ -46,11 +46,40 @@
       {
         "id": "mako",
         "aliases": [
-          "HTML (Mako)",
+          "Mako template",
           "mako"
         ],
         "extensions": [
           ".mako"
+        ],
+        "icon": {
+          "light": "./icon.png",
+          "dark": "./icon.png"
+        },
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "mako-html",
+        "aliases": [
+          "Mako template (HTML)"
+        ],
+        "extensions": [
+          ".html.mako"
+        ],
+        "icon": {
+          "light": "./icon.png",
+          "dark": "./icon.png"
+        },
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "mako-python",
+        "aliases": [
+          "Mako template (Python)"
+        ],
+        "extensions": [
+          ".py.mako",
+          ".pyi.mako"
         ],
         "icon": {
           "light": "./icon.png",
@@ -62,14 +91,37 @@
     "grammars": [
       {
         "language": "mako",
-        "scopeName": "text.html.mako",
+        "scopeName": "source.mako",
         "path": "./syntaxes/mako.tmLanguage.json"
+      },
+      {
+        "language": "mako-html",
+        "scopeName": "source.mako.templates.html",
+        "path": "./syntaxes/mako-html.tmLanguage.json",
+        "embeddedLanguages": {
+          "source.mako": "text.html.basic"
+        }
+      },
+      {
+        "language": "mako-python",
+        "scopeName": "source.mako.templates.python",
+        "path": "./syntaxes/mako-python.tmLanguage.json"
       }
     ],
     "snippets": [
       {
         "language": "mako",
-        "scopeName": "text.html.mako",
+        "scopeName": "source.mako",
+        "path": "./snippets/mako-snippets.json"
+      },
+      {
+        "language": "mako-html",
+        "scopeName": "source.mako.templates.html",
+        "path": "./snippets/mako-snippets.json"
+      },
+      {
+        "language": "mako-python",
+        "scopeName": "source.mako.templates.python",
         "path": "./snippets/mako-snippets.json"
       }
     ],
