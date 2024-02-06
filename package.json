@@ -57,6 +57,20 @@
           "dark": "./icon.png"
         },
         "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "mako-html",
+        "aliases": [
+          "Mako template (HTML)"
+        ],
+        "extensions": [
+          ".html.mako"
+        ],
+        "icon": {
+          "light": "./icon.png",
+          "dark": "./icon.png"
+        },
+        "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
@@ -64,12 +78,22 @@
         "language": "mako",
         "scopeName": "source.mako",
         "path": "./syntaxes/mako.tmLanguage.json"
+      },
+      {
+        "language": "mako-html",
+        "scopeName": "source.mako.templates.html",
+        "path": "./syntaxes/mako-html.tmLanguage.json"
       }
     ],
     "snippets": [
       {
         "language": "mako",
         "scopeName": "source.mako",
+        "path": "./snippets/mako-snippets.json"
+      },
+      {
+        "language": "mako-html",
+        "scopeName": "source.mako.templates.html",
         "path": "./snippets/mako-snippets.json"
       }
     ],
